@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.17';
+$VERSION = '0.18';
 
 #----------------------------------------------------------------------------
 
@@ -26,9 +26,11 @@ L<ExtUtils::MakeMaker>, L<Module::Build> and L<Module::Install>.
 This module is meant to be used together with L<Test::CPAN::Meta>, however
 the code is self contained enough that you can access it directly.
 
+See L<CPAN::Meta> for further details of the CPAN Meta Specification.
+
 =head1 ABSTRACT
 
-Validation of META.yml specification elements.
+Validation of META.yml data against the CPAN Meta Specification.
 
 =cut
 
@@ -795,9 +797,9 @@ for Miss Barbell Productions, L<http://www.missbarbell.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2007-2010 Barbie for Miss Barbell Productions
+  Copyright (C) 2007-2011 Barbie for Miss Barbell Productions
 
   This module is free software; you can redistribute it and/or
-  modify it under the same terms as Perl itself.
+  modify it under the Artistic Licence v2.
 
 =cut
