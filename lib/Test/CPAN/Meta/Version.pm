@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.22';
+$VERSION = '0.23';
 
 #----------------------------------------------------------------------------
 
@@ -18,19 +18,16 @@ Test::CPAN::Meta::Version - Validate CPAN META data against the specification
 
 =head1 DESCRIPTION
 
-This module was written to ensure that a META.yml file, provided with a
+This distribution was written to ensure that a META.yml file, provided with a
 standard distribution uploaded to CPAN, meets the specifications that are
-slowly being introduced to module uploads, via the use of
-L<ExtUtils::MakeMaker>, L<Module::Build> and L<Module::Install>.
+slowly being introduced to module uploads, via the use of package makers and
+installers such as L<ExtUtils::MakeMaker>, L<Module::Build> and
+L<Module::Install>.
 
 This module is meant to be used together with L<Test::CPAN::Meta>, however
 the code is self contained enough that you can access it directly.
 
 See L<CPAN::Meta> for further details of the CPAN Meta Specification.
-
-=head1 ABSTRACT
-
-Validation of META.yml data against the CPAN Meta Specification.
 
 =cut
 
@@ -762,7 +759,7 @@ sub _error {
     push @{$self->{errors}}, $mess;
 }
 
-q( Currently Listening To: Gary Numan - "This Wreckage" from 'Scarred');
+q( "Before software can be reusable it first has to be usable." - Ralph Johnson );
 
 __END__
 
@@ -787,9 +784,9 @@ for Miss Barbell Productions, L<http://www.missbarbell.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2007-2012 Barbie for Miss Barbell Productions
+  Copyright (C) 2007-2013 Barbie for Miss Barbell Productions
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic Licence v2.
 
 =cut

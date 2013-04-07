@@ -4,13 +4,13 @@ use warnings;
 use strict;
 
 use vars qw($VERSION);
-$VERSION = '0.22';
+$VERSION = '0.23';
 
 #----------------------------------------------------------------------------
 
 =head1 NAME
 
-Test::CPAN::Meta - Validation of the META.yml file in a CPAN distribution.
+Test::CPAN::Meta - Validate your CPAN META.yml files.
 
 =head1 SYNOPSIS
 
@@ -48,17 +48,13 @@ tests under the hood.
 
 =head1 DESCRIPTION
 
-This module was written to ensure that a META.yml file, provided with a
+This distribution was written to ensure that a META.yml file, provided with a
 standard distribution uploaded to CPAN, meets the specifications that are
 slowly being introduced to module uploads, via the use of package makers and
 installers such as L<ExtUtils::MakeMaker>, L<Module::Build> and
 L<Module::Install>.
 
 See L<CPAN::Meta> for further details of the CPAN Meta Specification.
-
-=head1 ABSTRACT
-
-A test module to validate a CPAN META.yml file.
 
 =cut
 
@@ -155,7 +151,7 @@ sub meta_spec_ok {
     return $data;
 }
 
-q( Currently Listening To: Nine Inch Nails - "Head Down" from 'The Slip');
+q( "Before software can be reusable it first has to be usable." - Ralph Johnson );
 
 __END__
 
@@ -207,9 +203,9 @@ for Miss Barbell Productions, L<http://www.missbarbell.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-  Copyright (C) 2007-2012 Barbie for Miss Barbell Productions
+  Copyright (C) 2007-2013 Barbie for Miss Barbell Productions
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic Licence v2.
 
 =cut
